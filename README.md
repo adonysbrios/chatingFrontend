@@ -1,6 +1,8 @@
 # chatFrontend
+![Screenshot from 2025-01-26 01-09-10](https://github.com/user-attachments/assets/551d6c64-84be-4762-a167-7266a9f2660c)
+![Screenshot from 2025-01-26 01-09-17](https://github.com/user-attachments/assets/9b538eaf-76f8-4355-b39a-028abd557b7e)
+![Screenshot from 2025-01-26 01-15-23](https://github.com/user-attachments/assets/ab47f27f-22d1-4353-8613-bc3d1f9eb37d)
 
-This template should help get you started developing with Vue 3 in Vite.
 
 ## Recommended IDE Setup
 
