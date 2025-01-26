@@ -1,0 +1,94 @@
+@import './base.css';
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0rem;
+  font-weight: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: var(--color-text)
+}
+
+.chat {
+  display: grid;
+  gap: 10px;
+  min-height: 97vh;
+  padding-top:3vh;
+  grid-template-rows: .2fr 1.7fr .1fr;
+}
+
+.chat * {
+  padding: 0;
+  margin: 0;
+}
+
+.chat textarea{
+  resize: none;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 13px;
+}
+
+.chat .alert {
+  text-align: center;
+  padding: 2px;
+  max-width: 80%;
+  color: var(--color-header);
+  margin: 10px auto;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.075);
+}
+
+.goBack{
+  background-color: var(--color-background);
+  color: var(--color-text)
+}
+
+.chat .header{
+  border-bottom: solid 1px var(--color-border);
+  padding-bottom: 2px;
+}
+
+.chat .messages{
+  overflow-y: scroll;
+  max-height: 70vh;
+}
+
+.chat .form{
+  display: grid;
+  grid-template-columns: 1.9fr .1fr;
+}
+
+.message {
+  display: flex;
+  gap: 10px;
+  margin: 10px auto;
+}
+
+.message img {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+
+.message-info{
+  padding: 10px 20px;
+  width: 100%;
+  border-radius: 4px;
+  background-color: var(--color-background-soft);
+}
+
+.message-user {
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--color-heading)
+}
+
+.message-message{
+  font-size: 13px;
+}
