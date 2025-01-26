@@ -7,16 +7,16 @@
     <div class="messages">
       <div v-for="message in state.roomsMessages[route.params.id]">
         <p class="alert" v-if="message.alert">{{ message.alert }}</p>
-        <div class="message" v-else-if="message.user.username!=state.username">
+        <div class="message" v-else-if="message.user!=state.username">
           <img src="/user.png" alt="">
           <div class="message-info">
-            <p class="message-user">{{ message.user.username }}</p>
+            <p class="message-user">{{ message.user }}</p>
             <p class="message-message">{{ message.message }}</p>
           </div>
         </div>
         <div class="message" v-else>
           <div class="message-info">
-            <p class="message-user">{{ message.user.username }} (You)</p>
+            <p class="message-user">{{ message.user }} (You)</p>
             <p class="message-message">{{ message.message }}</p>
           </div>
           <img src="/user.png" alt="">

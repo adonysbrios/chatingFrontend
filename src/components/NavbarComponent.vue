@@ -24,19 +24,27 @@
   </div>
 
   <div v-if="showLogin && !state.connected">
+    <h1> Login </h1>
     <input v-model="username" placeholder="Username" />
-    <button @click="login(username)">Connect</button>
+    <input v-model="password" placeholder="Password" />
+    <button @click="login(username, password)">Connect</button>
+    <h1> Register </h1>
+    <input v-model="username" placeholder="Username" />
+    <input v-model="password" placeholder="Password" />
+    <button @click="register(username, password)">Register</button>
   </div>
 </template>
 
 <script setup>
-import { state, login, createChat, joinChat } from '@/socket';
+import { state, login, createChat, joinChat, register } from '@/socket';
 import { ref, reactive } from 'vue';
 
 const username = ref("")
+const password = ref("")
 const showLogin = ref(false)
 const showCreateChat = ref(false)
 const showJoinChat = ref(false)
+const showRegister = ref(false)
 const room = reactive({
   id: "",
   password: ""

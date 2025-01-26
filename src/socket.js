@@ -13,10 +13,14 @@ const URL = "http://localhost:5000";
 
 export const socket = io(URL, {autoConnect: false});
 
-export const login = (username) => {
+export const login = (username, password) => {
   state.username = username;
   socket.connect();
-  socket.emit("login", username);
+  socket.emit("login", {username:username, password:password});
+}
+
+export const register = (username, password) => {
+  socket.emit("register", {username, password});
 }
 
 export const sendMessage = (room, message) => {
